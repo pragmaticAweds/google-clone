@@ -14,6 +14,7 @@ body {
 
 body {
   min-height: 100vh;
+  overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
@@ -21,7 +22,7 @@ body {
 }
 
 main {
-  flex-grow: 0.9;
+  flex-grow: 0.7;
   display: flex;
   flex-direction: column;
   background-color: #202124;
@@ -29,7 +30,17 @@ main {
 
 footer {
   background-color: #171717;
-  flex-grow: 0.1;
+  flex-grow: 0.3;
+}
+
+a {
+  color: #8ab4f8;
+  text-decoration: none;
+  font-size: 0.8125rem;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 nav {
@@ -37,13 +48,17 @@ nav {
   justify-content: flex-end;
   padding: 1rem;
   column-gap: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
 }
 
 nav > div:first-child {
   display: flex;
   align-items: center;
   column-gap: 1rem;
+}
+
+nav > div:first-child > a {
+  color: white;
 }
 
 nav > div:nth-child(2) {
@@ -121,7 +136,7 @@ nav > div:nth-child(2) > a:nth-child(2) > img {
 
 .search-voice-img-wrapper {
   display: flex;
-  column-gap: 0.8rem;
+  column-gap: 0.8125rem;
 }
 
 .search-voice-img-wrapper svg {
@@ -150,4 +165,20 @@ nav > div:nth-child(2) > a:nth-child(2) > img {
 .btn-wrapper > button:hover,
 .btn-wrapper > button:active {
   border: 1px solid #9aa0a6;
+}
+
+.hero-sub-content {
+  margin-top: 0.5rem;
+  display: flex;
+  font-size: 0.8125rem;
+  column-gap: 0.7rem;
+}
+
+.hero-sub-content > p {
+  color: #bdc1c6;
+}
+
+.hero-sub-content > div {
+  display: flex;
+  column-gap: 0.5rem;
 }
