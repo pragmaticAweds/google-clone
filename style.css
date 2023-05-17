@@ -22,7 +22,7 @@ body {
 }
 
 main {
-  flex-grow: 0.7;
+  flex-grow: 0.9;
   display: flex;
   flex-direction: column;
   background-color: #202124;
@@ -30,7 +30,7 @@ main {
 
 footer {
   background-color: #171717;
-  flex-grow: 0.3;
+  flex-grow: 0.1;
 }
 
 a {
@@ -181,4 +181,23 @@ nav > div:nth-child(2) > a:nth-child(2) > img {
 .hero-sub-content > div {
   display: flex;
   column-gap: 0.5rem;
+}
+
+footer > span {
+  display: block;
+  padding: 1rem;
+  color: #9aa0a6;
+}
+
+footer > div {
+  padding: 1rem 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #3c4043;
+}
+
+footer > div > a,
+footer > div > div > a {
+  color: #999da2;
 }
