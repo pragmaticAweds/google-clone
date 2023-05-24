@@ -188,7 +188,6 @@ footer > span {
   padding: 1rem;
   color: #9aa0a6;
 }
-
 footer > div {
   padding: 1rem 1rem 0;
   display: flex;
@@ -196,8 +195,123 @@ footer > div {
   justify-content: space-between;
   border-top: 1px solid #3c4043;
 }
-
 footer > div > a,
 footer > div > div > a {
   color: #999da2;
 }
+
+
+
+ @media screen and (max-width:1400px) {
+  footer > span {
+    
+    padding-left: 2rem;
+  }
+  footer > div > a {
+    align-self: flex-start;
+    margin-left: -9rem;
+    padding-bottom: 4rem;
+    width: fit-content;
+  }
+
+  footer > div > :nth-child(1)
+   {
+    display: flex;
+  }
+
+  footer > div > :nth-child(3)
+  {
+   display: flex;
+   padding-right: .09rem;
+}
+
+footer > div > :nth-child(1) > a {
+  margin: .7rem;
+padding-left: 1rem;
+
+}
+
+footer > div > :nth-child(3) > a {
+  margin: 1rem;
+  
+}
+
+footer > span,
+  footer > div > a,
+  footer > div > div > a {
+    font-size: 0.7rem;
+  }
+ }
+@media screen and (max-width:600px) {
+  
+  footer > span,
+  footer > div > a,
+  footer > div > div > a {
+    font-size: 0.4rem;
+  }
+
+  footer > div > a {
+    align-self: flex-start;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+  }
+  
+
+  footer > div > :nth-child(1)
+   {
+    display: flex;
+  }
+
+  footer > div > :nth-child(3)
+  {
+   display: flex;
+   
+ }
+
+  footer > div > :nth-child(1) > a {
+    margin: .16rem;
+
+  }
+
+  footer > div > :nth-child(3) > a {
+    margin: .11rem;
+  }
+}
+/* @media (max-width:600px) {
+  .btn-wrapper > button {
+    color: red;
+  }
+
+  footer > span{
+    font-size: 0.5rem;
+  }
+
+  footer > div > div {
+    display: flex;
+    column-gap: 0.3rem;
+    
+    
+  
+  }
+
+  footer > div > div > a {
+    font-size: 0.5rem;
+  }
+
+
+  footer > div > a {
+    font-size: 0.5rem;
+    display:inline-flex;
+    align-self: flex-start;
+    padding-bottom: 3rem;
+    width: 10rem;
+    position:relative;
+    left:1.5rem;
+  }
+  footer > div > div >:nth-child(4){
+
+    position: absolute;
+    left:7.8rem;
+  }
+  
+} */
