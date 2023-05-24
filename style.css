@@ -205,6 +205,7 @@ footer > div > div > a {
   .search-wrapper {
     max-width: 70%;
   }
+
   .search-wrapper > input{
     width:70%;
   }
@@ -224,7 +225,25 @@ footer > div > div > a {
   .hero-sub-content > div{
     column-gap: 0.5rem;
     flex-wrap: nowrap;
-    
-    
+  }   
+}
+@media screen and (max-width: 360px) {
+  nav{
+    column-gap: 0.1rem;
+    padding-right: 0.1rem; 
   }
+  .btn-wrapper > button{
+  font-size: 0.6rem;
+}
+  .hero-sub-content > p{
+  font-size: 0.6rem;
+  display:inline-flex;
+}
+.hero-sub-content > div > a{
+  font-size: 0.6rem;
+}
+.hero > a{
+  font-size:0.6rem;
+}
+
 }
